@@ -285,6 +285,17 @@
     }
     .buy-options { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
 
+    /* Trailer + testimony videos: one centred row, side by side, wrapping on small screens */
+    .video-row {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem 3rem;
+      margin-top: 2rem;
+    }
+
     /* ── Quote ── */
     #quote {
       background: var(--green-light);
@@ -474,10 +485,10 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#book">Book</a></li>
-            <li><a href="https://ottoaligned.com/resonant-alignment/">Free Guide</a></li>
+      <li><a href="https://ottoaligned.com/resonant-alignment/">Free Guide</a></li>
       <li><a href="#trailer">Trailer</a></li>
       <li><a href="#music">Music</a></li>
-            <li><a href="https://ottoaligned.com/resonant-alignment/sanctuary.html">Sanctuary</a></li>
+      <li><a href="#sanctuary">Sanctuary</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
@@ -543,41 +554,46 @@
           <p class="book-subtitle">A Christian Guide to Spiritual Alignment and Inner Renewal</p>
           <p>What if manifestation isn't about getting what you want — but aligning with who you were made to be?</p>
           <p class="not-prosperity">This is not a prosperity gospel book. No formulas. No promises of wealth. Just an honest exploration of what it means to tune your inner life to God's intention rather than your own desires.</p>
-          <p>Drawing on science, scripture, and personal reflection, this book walks through twelve chapters of practical spiritual transformation — from understanding vibrational frequency and emotional resonance, to releasing resistance and living in daily alignment with the Creator.</p>
-          <p>At the heart of the book is a simple truth: the clearest resonance of God is found in Jesus Christ — not as religion or rules, but as the living frequency of love, truth, and purpose.</p>
           <div class="buy-options">
             <a class="btn" href="https://www.amazon.com/dp/B0H3NBN9G4" target="_blank" rel="noopener">Paperback — $11.99</a>
             <a class="btn btn-outline" href="https://www.amazon.com/dp/B0H3NBN9G4" target="_blank" rel="noopener">Kindle — $4.99</a>
           </div>
-                   <p style="margin-top:1rem; font-size:0.95rem;">Not ready to buy? <a href="https://ottoaligned.com/resonant-alignment/" style="color:var(--gold); text-decoration:underline;">Get the free guide</a>.</p>
-
-        <!-- Book Trailer -->
-        <div id="trailer" style="margin-top:2rem; text-align:center;">
-          <p class="section-label">Watch the Trailer</p>
-          <div style="max-width:315px; margin:1rem auto;">
-            <iframe width="315" height="560"
-              src="https://www.youtube.com/embed/OLKq4YOKk2E"
-              title="Book Trailer — The Law of Resonant Alignment"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
+          <p style="margin-top:1rem; font-size:0.95rem;">Not ready to buy? <a href="https://ottoaligned.com/resonant-alignment/" style="color:var(--gold); text-decoration:underline;">Get the free guide</a>.</p>
+          <p style="margin-top:1.5rem;">Drawing on science, scripture, and personal reflection, this book walks through twelve chapters of practical spiritual transformation — from understanding vibrational frequency and emotional resonance, to releasing resistance and living in daily alignment with the Creator.</p>
+          <p>At the heart of the book is a simple truth: the clearest resonance of God is found in Jesus Christ — not as religion or rules, but as the living frequency of love, truth, and purpose.</p>
         </div>
 
-        <!-- Reader Testimony -->
-        <div style="margin-top:2rem; text-align:center;">
-          <p class="section-label">My Testimony</p>
-          <div style="max-width:315px; margin:1rem auto;">
-            <iframe width="315" height="560"
-              src="https://www.youtube.com/embed/XwKgmDqQuvc"
-              title="Reader Testimony"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+        <!-- Trailer and Testimony: side by side -->
+        <div class="video-row">
+
+          <!-- Book Trailer -->
+          <div id="trailer" style="text-align:center;">
+            <p class="section-label">Watch the Trailer</p>
+            <div style="max-width:315px; margin:1rem auto;">
+              <iframe width="315" height="560"
+                src="https://www.youtube.com/embed/OLKq4YOKk2E"
+                title="Book Trailer — The Law of Resonant Alignment"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
-        </div>
+
+          <!-- Reader Testimony -->
+          <div style="text-align:center;">
+            <p class="section-label">My Testimony</p>
+            <div style="max-width:315px; margin:1rem auto;">
+              <iframe width="315" height="560"
+                src="https://www.youtube.com/embed/XwKgmDqQuvc"
+                title="Reader Testimony"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -615,7 +631,7 @@
       <h2>Sanctuary</h2>
       <div class="gold-line" style="margin:1rem auto;"></div>
       <p>A monthly letter for readers who want more — one idea a month, worked through properly, delivered by email or printed and mailed.</p>
-            <a class="btn" href="https://ottoaligned.com/resonant-alignment/sanctuary.html">Learn About Sanctuary</a>
+      <a class="btn" href="https://ottoaligned.com/resonant-alignment/sanctuary.html">Learn About Sanctuary</a>
     </div>
   </section>
 
